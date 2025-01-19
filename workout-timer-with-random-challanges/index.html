@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Timer with Fun Challenges</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Workout Timer with Fun Challenges</h1>
+</header>
+
+    <div class="container">
+        <div class="workout-column">
+            <section id="timer-section">
+                <h2>Workout Timer</h2>
+                <label for="workout-time">Set Workout Time (min):</label>
+                <input type="number" id="workout-time" min="1" max="60" value="30">
+                <br><br>
+                <label for="workout-interval">Interval Time (sec):</label>
+                <input type="number" id="workout-interval" min="5" max="60" value="15">
+                <br><br>
+                <div class="button-container">
+                    <button id="start-timer"><i class="fas fa-play icon-setting"></i>Start</button>
+                    <button id="pause-timer"><i class="fas fa-pause icon-setting"></i>Pause</button>
+                    <button id="reset-timer"> <i class="fas fa-stop icon-setting"></i>Reset</button>
+                </div>
+            </section>
+        
+            <section id="challenge-section">
+                <h2>Random Challenge</h2>
+                <div id="challenge-display">
+                    <span>No challenge yet!</span>
+                </div>
+                <button id="generate-challenge">Generate Challenge</button>
+            </section>
+        </div>
+
+        <div class="progress-column">
+            <section id="timer-display-section">
+                <h2 class="timer-heading">Timer</h2>
+                <p id="timer-display">00:00</p>
+            </section>
+        
+            <section id="progress-section">
+                <h2>Progress Tracker</h2>
+                <div id="progress-bar" style="width: 100%; background-color: #e0e0e0; border-radius: 5px; overflow: hidden;">
+                    <div id="progress" style="width: 0%; height: 20px; background-color: #76c7c0;"></div>
+                </div>
+                <p id="progress-text">0% completed</p>
+            </section>
+        
+            <section id="settings-section">
+                <h3>Customize Challenges</h3>
+                <div id="custom-challenges">
+                    <ul id="challenge-list">
+                        <!-- Custom challenges will be displayed here -->
+                    </ul>
+                </div>
+                <input type="text" id="custom-challenge" placeholder="Add a custom challenge...">
+                <button id="add-challenge">Add Challenge</button>
+                <button id="clear-challenges">Clear Challenges</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>

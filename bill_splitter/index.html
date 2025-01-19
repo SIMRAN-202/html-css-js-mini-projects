@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">Bill Splitter</div>
+        <div class="container-content">
+            <div class="left-col">
+                <div class="row">
+                    <label for="amount">Total amount to pay</label>
+                    <input type="text" id="amount">
+                </div>
+                <div class="row">
+                    <label for="people">Number of People</label>
+                    <div class="number-input">
+                        <button id="minus" onclick="changePeople(-1)">-</button>
+                        <input type="text" id="people" value="1">
+                        <button id="plus" onclick="changePeople(1)">+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label for="tip">Tip (%)</label>
+                    <input type="text" id="tip">
+                </div>
+                <button id="calculate">Calculate</button>
+              
+              
+            </div>
+            <div class="right-col">
+                <h3>Total amount to pay</h3>
+                <span id="totalAmount">0</span>
+                <h3>Total amount to pay by each person</h3>
+                <span id="amountPerPerson">0</span>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

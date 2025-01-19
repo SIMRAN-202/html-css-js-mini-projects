@@ -1,0 +1,340 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+.icon-setting{
+    margin-right:5px ;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Adjusted width to 90% */
+    margin: 20px auto; /* Centered with less space at the ends */
+}
+
+/* Workout Column Styles */
+.workout-column {
+    width: 60%; /* Set the width of the workout column to 70% */
+    margin: 20px auto; /* Center the column with auto margins */
+    animation: fadeIn 1.4s backwards;
+}
+
+/* Timer and Challenge Section Styles */
+#timer-section, #challenge-section {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+#timer-section h2, #challenge-section h2 {
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 15px;
+    text-align: center; /* Center the headings */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin: 10px 0 5px; /* Margin for spacing */
+}
+
+input[type="number"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    margin-bottom: 15px; /* Space below input */
+}
+
+.button-container {
+    display: flex; /* Use flexbox for button alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    flex: 1; /* Allow buttons to grow equally */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Challenge Section Styles */
+#challenge-display {
+    background-color: #e9f5e9; /* Light green background for challenge display */
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Space below the challenge display */
+}
+
+#generate-challenge {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    width: 100%; /* Full width for the button */
+}
+
+#generate-challenge:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+/* Progress Column Styles */
+.timer-heading{
+    color:#45a049
+
+}
+ #timer-display-section {
+    text-align: center;
+}
+
+#timer-display {
+    color: #333;
+    background-color: #b3f7b6;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 48px;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.9s ease;
+}
+.progress-column {
+    width: 30%;
+    margin: 10px auto;
+    animation: fadeIn 1.4s backwards;
+     /* Set width to 30% */
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#progress-section, #settings-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px; /* Space between the two sections */
+}
+
+#progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+#progress {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 0; /* Start with 0% width */
+    transition: width 0.5s;
+}
+
+#progress-text {
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em; /* Increase font size for better readability */
+}
+
+/* Settings Section Styles */
+#settings-section {
+    background-color: #ffffff; /* White background for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between the two sections */
+}
+
+#settings-section h3 {
+    color: #4CAF50; /* Green color for headings */
+    margin-bottom: 15px;
+    font-size: 1.5em; /* Larger font size for emphasis */
+    text-align: center; /* Center the heading */
+}
+
+#custom-challenges {
+    margin-bottom: 15px;
+}
+
+#challenge-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+#challenge-list li {
+    background-color: #e9f5e9; /* Light green background */
+    border: 1px solid #4CAF50; /* Green border */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px; /* Space between list items */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+#challenge-list li:hover {
+    background-color: #d4edda; /* Slightly darker on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Button Container */
+.button-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 10px; /* Space above buttons */
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-size: 1em; /* Increase font size for better readability */
+    flex: 1; /* Allow buttons to grow equally */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:last-child {
+    margin-right: 0; /* Remove margin from the last button */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#clear-challenges {
+    background-color: #f44336; /* Red background for clear button */
+}
+
+#clear-challenges:hover {
+    background-color: #e53935; /* Darker red on hover */
+}
+@media screen and (max-width: 767px) {
+    #custom-challenges {
+        margin-bottom: 10px;
+    }
+
+    #challenge-list li {
+        padding: 8px; /* Reduce padding */
+        font-size: 0.9em; /* Adjust font size */
+    }
+
+    button {
+        padding: 8px 12px; /* Smaller buttons */
+        font-size: 0.9em;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: stretch;
+    }
+
+    button {
+        margin-bottom: 10px; /* Space between buttons when stacked */
+        margin-right: 0; /* Remove horizontal margin */
+    }
+
+    button:last-child {
+        margin-bottom: 0; /* Remove margin for the last button */
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #custom-challenges {
+        margin-bottom: 15px;
+    }
+
+    #challenge-list li {
+        font-size: 1em; /* Slightly larger font */
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 1em;
+    }
+
+    .button-container {
+        flex-wrap: wrap; /* Allow buttons to wrap if needed */
+    }
+
+    button {
+        flex: 1 1 calc(50% - 10px); /* Buttons take half width with spacing */
+        margin-bottom: 10px;
+    }
+
+    button:last-child {
+        margin-right: 0; /* Remove horizontal margin */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 95%; /* Adjusted width for smaller screens */
+    }
+
+    .workout-column, .progress-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .workout-column {
+        margin-right: 0; /* Remove right margin on smaller screens */
+    }
+}

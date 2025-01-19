@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ecf0f3;
+    min-height: 100vh;
+}
+.container{
+    width: 45%;
+    height: 52vh;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 12px 12px 20px #cbced1, -5px -5px 20px #fff;
+    /* border: 1px dotted rgb(166, 218, 252); */
+}
+
+.display #screen{
+    width: 97%;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    border-radius: 10px;
+    background: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1,inset -8px -8px 8px #fff;
+}
+
+.btns{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btns .row button{
+    width: 80px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 7px;
+    border-radius: 4px;
+   box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #fff;
+   transition: 0.7s;
+  
+}
+.blue-btns{
+    background-color: #ccebfca6;
+}
+
+.btns .row button:hover{
+    box-shadow: inset 5px 5px 8px #00000020,inset -5px -5px 8px #fff;
+    
+}
+
+h2
+
+{
+    font-size: 40px;
+    position: relative;  
+    bottom: 1em; 
+    margin-left: 1.2em;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #d1d9e6,
+                    1px 1px 2px #d1d9e6,
+                    3px 3px 3px #d1d9e6,
+                    4px 4px 4px #d1d9e6,
+                    5px 5px 5px #d1d9e6, 
+                    6px 6px 6px #d1d9e6,
+                    7px 7px 7px #d1d9e6,
+                    8px 8px 8px #d1d9e6;
+                    letter-spacing: 6px;
+}
+
+h2 span
+{
+color: #33ccff;
+font-size: 45px;
+text-shadow: 1px 1px 1px #d1d9e6,
+                1px 1px 2px #d1d9e6,
+                3px 3px 3px #d1d9e6,
+                4px 4px 4px #d1d9e6,
+                5px 5px 5px #d1d9e6, 
+                6px 6px 6px #d1d9e6 ;    
+}
+
+h2 .fa
+{
+    position: absolute; 
+    top: 1.2em;
+    color: #33ccff;
+}
